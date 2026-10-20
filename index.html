@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>কবুল কাউন্টার</title>
+    <meta name="description" content="কবুল বলার পর থেকে প্রতিটা সেকেন্ডের হিসাব। বিয়ের বয়স, শুক্রবার, ঈদ আর পরিবারের হিসাব দেখুন, ছবিসহ কার্ড ডাউনলোড করুন।" />
+    <meta property="og:title" content="কবুল কাউন্টার 💍" />
+    <meta property="og:description" content="বিয়ের পর কতদিন, কতটা শুক্রবার, কতটা ঈদ গেল? দেখুন আর কার্ড বানান!" />
+    <meta name="theme-color" content="#B3123A" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>" />
+    <link rel="preload" href="/fonts/hind-siliguri-bengali-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/hind-siliguri-bengali-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <script>
+      // light theme by default; dark only if the visitor chose it
+      try {
+        var th = JSON.parse(localStorage.getItem('kobul-theme'));
+        if (th === 'dark') document.documentElement.classList.add('dark');
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
